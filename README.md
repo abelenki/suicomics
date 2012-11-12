@@ -41,4 +41,4 @@ The comics reading program as well as the games are developed using Flash/AS3. T
 
 ### License
 
-This software is released under the ASL license.
+This software is released under the Apache License, Version 2.0. See the LICENSE file for details.
