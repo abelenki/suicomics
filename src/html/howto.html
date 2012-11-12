@@ -1,0 +1,322 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://opengraphprotocol.org/schema/">
+<head>
+	<title>Suinova Comics - How To</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="title" content="Suinova Comics" />
+    <meta name="description" content="Comic books, manga and graphic novels on Facebook with social game mechanics and virtual goods." />
+    <meta property="og:title" content="Suinova Comics"/>
+    <meta property="og:image" content="http://suicomics.appspot.com/img/logo.png"/>
+    <meta property="og:site_name" content="Suinova Comics"/>
+    <link rel="image_src" type="image/png" href="http://suicomics.appspot.com/img/logo.png" />
+    <link type="text/css" rel="stylesheet" href="/css/styles.css"/>
+    <style type="text/css">
+    textarea {width:500px;height:300px;display:block;}
+    </style>
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="header">
+    <div id="logo">beta</div>
+    <div id="btns">
+            <div class="btn" id="btn_home"><a href="/"><img src="/img/books.png"/></a><div>Books</div></div>
+            <div class="btn" id="btn_readers"><a href="/"><img src="/img/readers.png"/></a><div>Gallery</div></div>
+            <div class="btn" id="btn_authors"><a href="/"><img src="/img/authors.png"/></a><div>Creators</div></div>
+            <div class="btn" id="btn_market"><a href="/"><img src="/img/market.png"/></a><div>Market</div></div>
+    </div>
+</div>
+<div id="loginbox">
+  <div id="lb0"><div>&nbsp;</div></div>
+  <div id="lb2">
+  Tell friends: <!-- <img src="/img/email.png"/> -->
+  <a name="fb_share" title="Share on Facebook" type="button" href="http://www.facebook.com/sharer.php">Share</a><script src="http://static.ak.fbcdn.net/connect.php/js/FB.Share" type="text/javascript"></script>
+    <a title="Post to Google Buzz" class="google-buzz-button" href="http://www.google.com/buzz/post" data-button-style="small-button" data-locale="en_GB" data-url="http://suicomics.appspot.com"></a>
+<script type="text/javascript" src="http://www.google.com/buzz/api/button.js"></script>
+    <a href="javascript:void(window.open('http://www.myspace.com/Modules/PostTo/Pages/?u='+encodeURIComponent(document.location.toString()),'ptm','height=450,width=440').focus())">
+    <img src="http://cms.myspacecdn.com/cms/ShareOnMySpace/small.png" border="0" align="absmiddle" style="border-right:1px solid gray;border-bottom:1px solid gray;" alt="Share on MySpace" /></a>
+	<a title="Share on Twitter" href="http://twitter.com/?status=Come+join+me+at+http%3a%2f%2fquicart.com" target="_blank"><img border="0" align="absmiddle" src="http://twitter-badges.s3.amazonaws.com/t_mini-b.png" style="border-bottom:2px solid #09336A;border-right:2px solid #09336A;"/></a>
+  </div>
+</div>
+<div id="intro_box">
+    <a href="/html/readers.html"><div id="readers_html" title="What's special for readers">&nbsp;</div></a>
+    <a href="/html/gallery.html"><div id="gallery_html" title="What's gallery about?">&nbsp;</div></a>
+    <a href="/html/suicomics.html"><div id="suicomics_html" title="How Suinova Comics works">&nbsp;</div></a>
+    <a href="/html/quest.html"><div id="quest_html" title="What's quest about?">&nbsp;</div></a>
+    <a href="/html/creators.html"><div id="creators_html" title="What's special for creators">&nbsp;</div></a>
+</div>
+
+<div id="text_here">
+<p>
+</p>
+<ul>
+    <li><a name="requires"><h2>What is a required item on a page?</h2>
+        <ul>
+            <li>A required item is a virtual goods designed by a creator for his/her book</li>
+            <li>It has a name, a small picture, a price and a short description</li>
+            <li>Creators design these items on the book edit page</li>
+            <li>It can be placed on a particular page in the Required Items section</li>
+            <li>A required item means that the reader must have it before reading that page</li>
+            <li>If the reader does not have it in her inventory, she has to buy it</li>
+            <li>A required item usually cannot be placed in the reader's gallery</li>
+            <li>There can be multiple items required on a page, but only one is necessary</li>
+            <li>A reader can choose to buy at least one of the items to go on reading</li>
+        </ul>
+    </li>
+    <li><a name="requires"><h2>What is a reward on a page?</h2>
+        <ul>
+            <li>A reward is a virtual goods designed by a creator for his/her book</li>
+            <li>It has a name, a small picture, a price and a short description</li>
+            <li>Creators design these items on the book edit page</li>
+            <li>Add a virtual goods to a particular page as reward for all readers</li>
+            <li>A reward item can be collected by a reader only once</li>
+            <li>And it can be placed in readers' galleries if the creator so defines</li>
+            <li>A reward item is displayed in a way determined by a <a href="#controls">dynamic control</a></li>
+            <li>It can show up automatically soon after the reader turns to the page</li>
+            <li>Or it can be displayed as a button or image for readers to click and pick</li>
+        </ul>
+    </li>
+    <li><a name="quests"><h2>What is a quest and how to create it?</h2>
+        <p>A quest is a task for the reader to complete. It is designed by the creator for the background story.
+        It consists of a big image as the scene and a list of items placed on it. Originally the reader has none
+        of these items, and while the reader reads the book, he/she can collect the items one by one, and eventually
+        collect all items to complete the quest.  When a reader completes a quest, he/she may get a prize.
+        </p>
+        <ul>
+            <li>Create an image of size 740x500 pixels and save as JPG file</li>
+            <li>Upload it as a virtual goods with display=false, price=0</li>
+            <li>Create a number of small transparent images as PNG files</li>
+            <li>Stick these small images onto the big one to find out top-left coordinates</li>
+            <li>Upload these stickers as virtual goods and set a price if for sale</li>
+            <li>Create a quest on the book edit page</li>
+            <li>Each quest has a name, a background image and up to five stickers</li>
+            <li>Give each sticker an x and y coordinate, scale of 0.1 to 1.0</li>
+            <li>And assign another virtual goods as a reward for completing the quest</li>
+            <li>The reward and stickers can be any virtual goods either bought or collected</li>
+        </ul>
+    </li>
+    <li><h3>Creat a quest script</h3>
+        <p>A quest script is in JSON format. If you're not sure what JSON is, you could either contact me for help with your quests, or wait until our visual quest editor is out.
+        </p><ul>
+        <li>A book can have multiple (10) quests, as a list of objects: [{...},{...},...]</li>
+        <li>Each quest has a "qid" which is an image ID, "qname" as the name of the quest, and a list of "items", a prize and an introduction.</li>
+        <li>Items are the shadow objects in the quest picture, these are virtual goods placed throughout the book pages.</li>
+        <li>An item has a "vgid" ID, x and y coordinates, "sc" as a scaling factor, and possible filters (to be available).</li>
+        <li>A prize is also a virtual goods image with an ID given here. If no prize, set the ID as zero</li>
+        <li>You can find the image IDs from the virtual goods table on the Creators page.</li>
+        <li>The quest image, the background picture, must be of 740x500 pixels in size, objects should be smaller.</li>
+        <li>Object images should have a transparent background saved as PNG files.</li>
+        <li>It's better to avoid objects overlapping each other.</li>
+        <li>It's recommended to design the objects in different layers, locate the positions and design the script.</li>
+        <li>Quest script is validated upon submission and will be rejected if invalid.</li>
+        <li>You can validate any JSON text on <a href="http://www.jsonlint.com/">http://www.jsonlint.com/</a> website.</li>
+        </ul>
+        <div>
+<textarea readonly="readonly">[
+    {
+        "qid": 16001,
+        "qname": "Mysterious Cave",
+        "items": [
+            {
+                "vgid": 9001,
+                "x": 155,
+                "y": 308,
+                "sc": 1.0,
+                "filters": []
+            },
+            {
+                "vgid": 10001,
+                "x": 265,
+                "y": 78,
+                "sc": 1.0,
+                "filters": []
+            },
+            {
+                "vgid": 11001,
+                "x": 445,
+                "y": 315,
+                "sc": 1.0,
+                "filters": []
+            },
+            {
+                "vgid": 17001,
+                "x": 575,
+                "y": 30,
+                "sc": 1.0,
+                "filters": []
+            },
+            {
+                "vgid": 18001,
+                "x": 330,
+                "y": 260,
+                "sc": 0.8,
+                "filters": []
+            }
+        ],
+        "prize": 34,
+        "intro": "Collect these five items from the book."
+    }
+]</textarea>
+        </div>
+    </li>
+    <li style="margin-top:50px;"><a name="controls"><h2>How to create a dynamic control?</h2>
+        <p>A dynamic control is a piece of code that defines how to present various types of rewards, collectibles and to-buy items placed on a page. A visual control editor is being developed, but at the moment please contact me (http://facebook.com/tedwen) for help.</p>
+        <ul>
+            <li>To add a donation link to an external website (replace image ID 109001 with yours):
+                <textarea readonly="readonly">{
+    "version": "1.0",
+    "controls": [
+        {
+            "type": "sprite",
+            "area": {
+                "item": 109001,
+                "ver": 0,
+                "tip": "Save a Dog",
+                "x": 20,
+                "y": 10,
+                "filters": [
+                    {
+                        "Shadow": {
+                            "color": "#000000"
+                        }
+                    },
+                    {
+                        "Glow": {
+                            "color": "#FFFF00"
+                        }
+                    }
+                ]
+            },
+            "trigger": "click",
+            "action": {
+                "method": "browse",
+                "params": {
+                    "url": "http://www.pdsa.org.uk/"
+                }
+            }
+        }
+    ]
+}</textarea>
+            </li>
+            <li>A popup reward a second after the reader turns to the page (Remember to add this item (96001 in this example) to Rewards section):
+            <textarea readonly="readonly">{
+    "version": "1.0",
+    "controls": [
+        {
+            "type": "timer",
+            "trigger": "1000",
+            "popup": {
+                "show": "RewardBox",
+                "items": [
+                    {
+                        "id": 96001,
+                        "ver": 0,
+                        "name": "Orange Room",
+                        "note": "Put it in your gallery as background image."
+                    }
+                ]
+            }
+        }
+    ]
+}</textarea>
+            </li>
+            <li>An clickable image on a page to collect a reward (Remember to add this item to the Rewards section):
+            <textarea readonly="readonly">{
+    "version": "1.0",
+    "controls": [
+        {
+            "type": "sprite",
+            "area": {
+                "item": 97001,
+                "ver": 0,
+                "tip": "Click to accept it",
+                "x": 200,
+                "y": 100,
+                "filters": [
+                    {
+                        "Shadow": {
+                            "color": "#000000"
+                        }
+                    }
+                ]
+            },
+            "trigger": "click",
+            "action": {
+                "method": "collect",
+                "params": {
+                    "item": 97001,
+                    "qty": 1
+                }
+            }
+        }
+    ]
+}</textarea>
+            </li>
+            <li>A button to show a popup (if no image, use a button).
+            <textarea readonly="readonly">{
+    "version": "1.0",
+    "controls": [
+        {
+            "type": "button",
+            "area": {
+                "item": 0,
+                "ver": 0,
+                "tip": "Like this page",
+                "x": 310,
+                "y": 480,
+                "w": 120,
+                "h": 30,
+                "filters": [
+                    {
+                        "Shadow": {
+                            "color": "#FF0000"
+                        }
+                    },
+                    {
+                        "Glow": {
+                            "color": "#FFFF00"
+                        }
+                    }
+                ]
+            },
+            "trigger": "click",
+            "popup": {
+                "show": "DonateBox",
+                "title": "Thank you!",
+                "items": [
+                    {
+                        "id": 1,
+                        "ver": 0,
+                        "price": 5,
+                        "note": "I'm glad you like this page! Please donate 5 Sudos to support my work. Thank you!"
+                    }
+                ]
+            }
+        }
+    ]
+}</textarea>
+            </li>
+            <li>To add a reward or collectible, remember to add the item to the Rewards section in addition to the dynamic control code.</li>
+            <li>A donate to the creator button is not necessary because there is already a Like button on every page.</li>
+        </ul>
+    </li>
+</ul>
+</div>
+
+<div id="footer">
+  <div id="footer_bar"></div>
+  <div><img src="/img/logo-32.png"/> &copy; 2011 Suinova Designs Ltd.</div>
+  <div>
+    <a href="/html/tos.html" target="_blank">Terms of Service</a> |
+    <a href="/html/privacy.html" target="_blank">Privacy Policy</a> | <a href="/html/aboutus.html" target="_blank">About Us</a> |
+    <a href="/html/contact.html" target="_blank">Contact</a> | <a href="http://blog.suinova.com/" target="_blank">Blog</a>
+  </div>
+</div>
+
+</div>
+
+</body>
+</html>

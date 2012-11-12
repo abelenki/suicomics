@@ -1,0 +1,8 @@
+cron:
+- description: daily birthday check
+  url: /task/birthday
+  schedule: every day 08:00
+- description: weekly user reminder
+  url: /task/uremind
+  schedule: every monday 01:00
+  

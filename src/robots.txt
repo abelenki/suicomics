@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /fb
+Disallow: /gg
+Disallow: /ms
+Disallow: /html/privacy.html
+Disallow: /html/tos.html

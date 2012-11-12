@@ -1,0 +1,213 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://opengraphprotocol.org/schema/">
+<head>
+	<title>Suinova Comics</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="title" content="Suinova Comics" />
+    <meta name="description" content="Comic books, manga and graphic novels on Facebook with social game mechanics and virtual goods." />
+    <meta property="og:title" content="Suinova Comics"/>
+    <meta property="og:image" content="http://suicomics.appspot.com/img/logo.png"/>
+    <meta property="og:site_name" content="Suinova Comics"/>
+    <link rel="image_src" type="image/png" href="http://suicomics.appspot.com/img/logo.png" />
+    <link type="text/css" rel="stylesheet" href="/css/styles.css"/>
+<style type="text/css">
+#intro_page{display:none;position:relative;height:640px;border-bottom:1px solid black;text-align:center;background:url(/img/introbg.jpg) repeat-x;text-align:left;
+}
+#intro_page div{position:absolute;background:white url(/img/ybar.png) repeat-x;padding:10px;
+color:#0000A7;text-shadow:#A2A2FF 1px 1px 1px;
+-moz-border-radius: 12px;
+border-radius: 12px;
+-moz-box-shadow: 5px 5px 5px black;
+-webkit-box-shadow: 5px 5px 5px black;
+box-shadow: 5px 5px 5px black;
+}
+#intro_page img{position:absolute;}
+#intro_page h1{font-size:14pt;margin:0px;}
+</style>
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="header">
+    <div id="logo">beta</div>
+    <div id="btns" class="menubar">
+            <div class="btn" id="btn_home"><img src="/img/books.png"/><div>Books</div></div>
+            <div class="btn" id="btn_readers"><img src="/img/readers.png"/><div>Gallery</div></div>
+            <div class="btn" id="btn_authors"><img src="/img/authors.png"/><div>Creators</div></div>
+            <div class="btn" id="btn_market"><img src="/img/market.png"/><div>Market</div></div>
+            <div class="btn" id="btn_gift"><img src="/img/gifta.png"/><div>B-Gift</div></div>
+    </div>
+</div>
+<div id="sheader" style="display:none;">
+    <div id="slogo" title="Suinova Comics"><img src="/img/logo-32.png"/></div>
+    <div id="sbtns" class="menubar">
+        <div style="float:left;" id="sbn_home"><img src="/img/books0.png" title="Comic Books"/><div>A</div></div>
+        <div style="float:left;" id="sbn_readers"><img src="/img/readers0.png" title="Galleries"/><div>B</div></div>
+        <div style="float:left;" id="sbn_authors"><img src="/img/authors0.png" title="Creators"/></div>
+        <div style="float:left;" id="sbn_market"><img src="/img/market0.png" title="Market"/></div><div style="clear:both"></div>
+    </div>
+    <div id="newsbar"><div style="clear:both"></div></div>
+</div>
+
+<div id="loginbox">
+	<table width="100%"><tr>
+		<td style="width:14px;"><div style="width:8px;height:12px;background-color:#A97412;border:1px solid black;">&nbsp;</div></td>
+		<td>{{ login?WELCOME:LOGIN }}</td>
+		<td style="text-align:right;">
+		{{ onFacebook?FB_SHARE:OTHER_SHARE }}
+		</td>
+	</tr></table>
+</div>
+{{ INTRO_BOX }}
+<div id="intro_page">
+<div style="left:60px;top:30px;">
+<h1>Like comics or manga?</h1>
+<p>Yes, but I want something to play with</p>
+</div>
+<div style="left:310px;top:140px;">
+<h1>Like social games?</h1>
+<p>Yes, but I prefer better stories</p>
+</div>
+<div style="left:450px;top:260px;">
+<h1 style="text-align:center">OK</h1>
+<b>This is the place for you!</b><br/><br/>
+Here you can:
+<ul><li>Read stories</li><li>Enjoy art</li><li>Collect items</li><li>Decorate your gallery</li>
+<li>Do quests</li><li>Earn medals</li><li>Level up</li><li>etc.</li></ul>
+</div>
+
+<div style="left:60px;top:400px;">
+<h1>Are you a writer or artist?</h1>
+<p>Try self-publishing here:</p>
+<ul><li>Submit your works</li><li>Integrate with games</li><li>Sell virtual goods</li><li>Engage reader players</li>
+<li>and much more</li></ul>
+</div>
+<img style="left:240px;top:140px;" src="/img/garrow.png"/><img style="left:380px;top:260px;" src="/img/garrow.png"/>
+<img id="tour_btn" style="left:60px;top:300px;cursor:pointer;" src="/img/window.png" title="See how it works"/>
+<img id="enter_btn" style="left:170px;top:300px;cursor:pointer;" src="/img/door.png" title="Let's get started"/>
+</div>
+
+<DIV id="div_main" class="middlebox">
+
+<!-- default is home div -->
+<DIV class="middlebox" id="div_home">
+
+<div class="panes leftpane" id="home_leftpane">
+
+<div id="promote" class="wpanel">
+    <div class="wtitle">Featured Book</div>
+    <div>
+        <div id="promotetitle" class="promotetitle"></div>
+        <div id="promotelogo" style="text-align:center;"></div>
+        <div id="pgnote" class="wnote">
+        </div>
+        <div id="pgbuttons">
+            <button id="pmbtn_open">Open</button>
+            <button id="pmbtn_market">Shop</button>
+        </div>
+    </div>
+</div>
+
+<div class="wpanel">
+    <div class="wtitle">Genre</div>
+    <div id="div_genres">
+    </div>
+</div>
+
+</div>
+<div class="panes rightpane" id="home_rightpane">
+<div id="newsbars"><div id="hg_news">News scrolls up continuously in this window.</div><div style="clear:both"></div></div>
+
+{{ login?MYREADS:NOTHING}}
+<div class="wpanel">
+    <div class="wtitle">New Books</div>
+    <div id="newbooks" class="wtable">
+    </div>
+</div>
+
+<!-- <div class="wpanel">
+    <div class="wtitle">Top Recommendations</div>
+    <div id="recommended" class="wtable">
+    </div>
+</div> -->
+<div class="wpanel"><a name="bkbygr"></a>
+    <div class="wtitle">Books by Genre</div>
+    <div id="books_by_genre" class="wtable"></div>
+</div>
+
+</div><!-- endof rightpane-->
+
+</DIV>
+
+</DIV>
+
+<div id="footer">
+  <div style="background:url(/img/gradient-bar.gif) no-repeat center;height:12px;"></div>
+  <div><img src="/img/logo-32.png"/> &copy; 2010 Suinova Designs Ltd.</div>
+  <div>
+    <a href="/html/tos.html" target="_blank">Terms of Service</a> |
+    <a href="/html/privacy.html" target="_blank">Privacy Policy</a> | <a href="/html/aboutus.html" target="_blank">About Us</a> |
+    <a href="/html/contact.html" target="_blank">Contact</a> | <a href="http://blog.suinova.com/" target="_blank">Blog</a> |
+    <a href="/html/howto.html" target="_blank">FAQ</a>
+  </div>
+</div>
+
+</div>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+<script type="text/javascript" src="/js/{{sns|default:gg}}.js"></script>
+<script type="text/javascript">
+var recommended = {{ recommended }};
+var newbooks = {{ newbooks }};
+var myreads = {{ myreads }};
+var promoted = '{{ promoted }}';
+var g_books = {{ books }};
+var myinfo = {{ myinfo }};
+var mybooks = {{ mybooks }};
+var pageview = '{{ pageview|default:"home" }}';
+var genres={{ genres }};
+</script>
+<script type="text/javascript" src="/js/core.js"></script>
+<script type="text/javascript" src="/js/author.js"></script>
+<script type="text/javascript" src="/js/book.js"></script>
+<script type="text/javascript" src="/js/gallery.js"></script>
+<script type="text/javascript" src="/js/market.js"></script>
+<script type="text/javascript" src="/js/gift.js"></script>
+<script type="text/javascript" src="/js/forum.js"></script>
+<script type="text/javascript" src="/js/home.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js" type="text/javascript"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/yui/2.8.2/build/yuiloader/yuiloader-min.js" type="text/javascript"></script>
+{{ onFacebook?LOAD_FB:NOTHING }}
+<script type="text/javascript">
+var loader=new YAHOO.util.YUILoader({
+    require: ["uploader"],loadOptional:true,
+    onSuccess:function(){
+    },timeout:10000,combine:true
+});
+loader.insert();
+Main.init();
+</script>
+<script type="text/javascript" src="/js/jsas.js"></script>
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-20590507-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+<!--[if IE 6]>
+<script src="/js/DD_belatedPNG.js"></script>
+<script>
+  DD_belatedPNG.fix('.btn img,#slogo img');
+  DD_belatedPNG.fixPng(document.getElementById('logo'));
+</script>
+<![endif]-->
+</body>
+</html>

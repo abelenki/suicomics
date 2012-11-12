@@ -1,0 +1,61 @@
+application: suicomics
+version: 1
+runtime: python
+api_version: 1
+
+skip_files:
+- ^(.*/)?app\.yaml
+- ^(.*/)?app\.yml
+- ^(.*/)?index\.yaml
+- ^(.*/)?index\.yml
+- ^(.*/)?#.*#
+- ^(.*/)?.*~
+- ^(.*/)?.*\.py[co]
+- ^(.*/)?.*/RCS/.*
+- ^(.*/)?\..*
+- ^(.*/)?Thumbs.db
+- ^(.*/)?.*\.psd
+- ^(.*/)?.*\.bak$
+
+handlers:
+- url: /css
+  static_dir: css
+
+- url: /(img/)?favicon.ico
+  static_files: img/favicon.ico
+  upload: img/favicon.ico
+
+- url: /img
+  static_dir: img
+
+- url: /js
+  static_dir: js
+
+- url: /stats.*
+  script: $PYTHON_LIB/google/appengine/ext/appstats/ui.py
+
+- url: /html/(.*\.html)
+  static_files: html/\1
+  upload: html/(.*\.html)
+
+- url: /pay/.*
+  script: payment.py
+  secure: always
+
+- url: /admin/.*
+  script: main.py
+  login: admin
+
+- url: /task/.*
+  script: main.py
+  login: admin
+
+- url: /console/static
+  static_dir: console/app/view/static
+
+- url: /console.*
+  script: console/app/console.py
+
+- url: /.*
+  script: main.py
+ 
