@@ -21,9 +21,9 @@ import helper
 
 # change to use Facebook OpenGraph
 import facebook
-FACEBOOK_APP_ID = "179008415461930" #Suinova Comics (suicomics.appspot.com)
-FACEBOOK_APP_SECRET = "9e194f115ba46d6ba6daafb1e6fe3d86"
-FACEBOOK_API_KEY = "cfd0d9b4fab412eb9a70451c785ce97f"
+FACEBOOK_APP_ID = "" #Suinova Comics (suicomics.appspot.com)
+FACEBOOK_APP_SECRET = ""
+FACEBOOK_API_KEY = ""
 
 COOKIE_SECRET = '5121acea344842ee835824525f0ba807'  #from uuid.uuid4()
 

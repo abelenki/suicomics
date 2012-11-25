@@ -11,8 +11,8 @@ from google.appengine.api import taskqueue
 from models import *
 import helper
 
-SHARED_SECRET = '0ab8a58179f94eb29bfd0ffc43165aeb'
-SECRET_CODE = 'da8b181e4eb3499e91cba2eba0cd8fc0'
+SHARED_SECRET = ''
+SECRET_CODE = ''
 
 def default(web, args=None):
     """ Default handler to return the home page and call js to switch to author view. """

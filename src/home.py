@@ -10,7 +10,7 @@ import logging,re
 from google.appengine.ext import db
 from models import *
 
-SHARED_SECRET = 'c1cc7130f68f498b91ed97869e97281a'  #common secret for signature by all games while each game has an individual secret
+SHARED_SECRET = ''  #common secret for signature by all games while each game has an individual secret
 
 def default(web, terms=None):
     """ Default handler of this module. """
